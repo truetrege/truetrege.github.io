@@ -1,0 +1,358 @@
+body,
+    /*.btnContainer input[type=button],*/
+select,
+option,
+input{
+
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Kelly Slab', cursive;
+}
+
+/*@font-face {*/
+/*font-family: "Spice Rice";*/
+/*src: url("");*/
+/*font-weight: normal;*/
+/*font-style: normal;*/
+/*}*/
+
+.game {
+    display: flex;
+    justify-content: space-between;
+
+    /*// background-color: #FF8A65;*/
+    /*background-color: #D1F8DE;*/
+    background-color: #E1E2E1;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /*text-shadow: 0 2px 5px rgba(0,0,0,0.7);*/
+}
+
+.center {
+    align-self: center;
+}
+
+.left, .right, .figuresContainer, .themeContainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+
+}
+
+.figuresContainer {
+    height: 450px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.figuresContainer canvas {
+    margin-bottom: 10px;
+
+}
+
+.left, .right {
+    width: 250px;
+    background-color: #37474F;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+/ / background-color: #272727;
+}
+
+.left {
+    width: 150px;
+}
+
+.btnContainer input[type=button] {
+    /*box-shadow: 0 2px 5px rgba(0,0,0,0.7);*/
+
+    background-color: #2979ff;
+    border: none;
+    height: 50px;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 1px;
+    font-variant: all-petite-caps;
+    margin-right: 2px;
+    cursor: pointer;
+    width: 135px;
+}
+
+.topContainer ol {
+    /*margin: 0;*/
+    /*padding: 0;*/
+    text-shadow: 0 4px 9px rgba(0, 0, 0, 0.7);
+    font-size: 30px;
+}
+
+.gameContainer {
+    cursor: pointer;
+}
+
+html, body, .game {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.scoreContainer div {
+    font-size: 80px;
+    text-shadow: 0 4px 9px rgba(0, 0, 0, 0.7);
+}
+
+.gameContainer canvas {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    /*background-color: white;*/
+    display: block;
+}
+
+.themeSelect {
+    background-color: #37474f;
+    border: 1px white;
+    border: none;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.themeSelect option {
+
+    border: none;
+
+}
+
+.mobile {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.mobile .center {
+    margin-bottom: 5%;
+}
+
+.mobile .up {
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+}
+
+.mobile .figuresContainer {
+    height: auto;
+    flex-flow: row;
+}
+
+.mobile .figuresContainer canvas {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
+
+.mobile .scoreContainer div {
+    font-size: 55px;
+}
+
+.mobile .up {
+    background-color: #37474F;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    align-items: center;
+
+}
+
+.mobile .scoreContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.mobileSettings {
+    /*width: 95px;*/
+    /*height: 95px;*/
+    /*background: url("../img/sett.svg") no-repeat;*/
+    /*background-size: 95px;*/
+
+    width: 95px;
+    height: 95px;
+    /* background: url(../img/sett.svg) no-repeat; */
+    background-size: 95px;
+    background-color: #2196f3;
+    -webkit-mask: url(../img/sett.svg) no-repeat;
+    mask: url(../img/sett.svg) no-repeat;
+    -webkit-mask-size: 95px;
+    mask-size: 95px;
+}
+
+.modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0d0d0da6;
+}
+
+.modalWindow {
+    width: 80%;
+    height: 80%;
+    background-color: #37474F;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+
+}
+
+.modalHeader {
+    width: 100%;
+    height: 50px;
+    background-color: #0091ea;
+}
+
+.modalClose {
+    width: 50px;
+    height: 50px;
+    float: right;
+    /*background: url("../img/clos.svg") ;*/
+    /*background-size: 50px;*/
+    /*background-size: 50px;*/
+    background-color: #ef5350;
+    -webkit-mask: url(../img/clos.svg) no-repeat;
+    mask: url(../img/clos.svg) no-repeat;
+    -webkit-mask-size: 50px;
+    mask-size: 95px;
+}
+
+.mobile .topContainer ol {
+    font-size: 20px;
+}
+
+.mobile .gameContainer canvas {
+    width: 96%;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.mobile .up .figuresContainer {
+    /*width: 200px;*/
+}
+
+.mobile .up canvas {
+    max-height: 65px;
+    max-width: 65px;
+}
+/**
+THEMES
+*/
+.default {
+    background-color: #B0BEC5;
+}
+
+.default .gameContainer {
+    /*background-color: #40c4ff;*/
+    /*background-color: white;*/
+}
+
+.default .left, .default .right {
+    background-color: #37474F;
+}
+
+.default .btnContainer input[type=button] {
+    background-color: #0091ea;
+}
+
+/*
+ORANGE
+*/
+.orange {
+    background-color: #FBCD8A;
+}
+
+.orange .btnContainer input[type=button] {
+    background-color: #DA7A34;
+}
+.orange .modalHeader,.orange .mobileSettings{
+    background-color: #DA7A34;
+}
+
+/*
+BLACK
+*/
+.black {
+    background-color: #000;
+}
+
+/*
+GREEN
+*/
+.green {
+    background-color: #A5D6A7;
+}
+
+.green .left, .green .right {
+    /*background-color: #37474F;*/
+}
+
+.green .btnContainer input[type=button] {
+    background-color: #0091ea;
+}
+.green .modalHeader{
+    background-color: #A5D6A7;
+}
+.green .mobileSettings{
+    background-color: #388e3c;
+}
+
+/*
+BLUE
+*/
+@keyframes backgroundGlow {
+    from {
+        background-color: #40c4ff;
+        /*background: linear-gradient(45deg, white 10%, #EF5350 60%,#40c4ff 30%);*/
+    }
+    50% {
+        background-color: white;
+    }
+    to {
+        background-color: #40c4ff;
+
+        /*background: linear-gradient(45deg, #EF5350, #40c4ff,white);*/
+    }
+}
+
+.blue {
+    background-color: #B0BEC5;
+}
+
+.blue .gameContainer {
+    /*background-color: #40c4ff;*/
+    /*background: linear-gradient(45deg, white, #EF5350,#40c4ff);*/
+}
+
+.blue .gameContainer:active {
+    animation-name: backgroundGlow;
+    animation-duration: 0.25s;
+    animation-iteration-count: 3;
+    /*animation-direction: alternate-reverse;*/
+    animation-fill-mode: forwards;
+}
+
+.blue .left, .blue .right {
+    /*background-color: #37474F;*/
+}
+
+.blue .btnContainer input[type=button] {
+    background-color: #EF5350;
+}
+.blue .modalHeader, .blue .mobileSettings{
+    background-color: #EF5350;
+}
+.blue .modalClose{
+    background-color: #fff;
+}
