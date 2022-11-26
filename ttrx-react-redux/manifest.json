@@ -20,7 +20,7 @@
   ],
   "theme_color": "#37474F",
   "background_color": "#EF5350",
-  "start_url": "https://test3.madi.ru/ttrxr/index.html",
+  "start_url": "https://truetrege.github.io/ttrx-react-redux/",
   "display": "standalone",
   "orientation": "natural"
 }
